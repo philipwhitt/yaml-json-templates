@@ -1,0 +1,14 @@
+{
+	"require" : {
+		"php" : ">7.1",
+		"mustache/mustache"    : "2.12.*",
+		"wp-cli/php-cli-tools" : "v0.11.*",
+		"symfony/yaml"         : "v4.2.*",
+		"phpunit/phpunit"      : "7.5.*"
+	},
+	"autoload": {
+		"psr-4": {
+			"TemplateEngine\\": "src/main"
+		}
+	}
+}

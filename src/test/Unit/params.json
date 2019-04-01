@@ -1,0 +1,8 @@
+{
+	"foo" : "bar",
+	"nested" : {
+		"foo" : "bar",
+		"fruit" : ["apple", "banana"]
+	},
+	"fruit" : ["apple", "banana"]
+}
