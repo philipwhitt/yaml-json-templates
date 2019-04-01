@@ -1,4 +1,13 @@
 {
+	"name": "philipw/yaml-template-generator",
+	"type": "library",
+	"license": "GPL-3.0+",
+	"authors": [
+		{
+			"name": "Philip Whitt",
+			"email": "philipwhitt88@gmail.com"
+		}
+	],
 	"require" : {
 		"php" : ">7.1",
 		"mustache/mustache"    : "2.12.*",

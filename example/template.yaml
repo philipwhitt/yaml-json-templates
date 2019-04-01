@@ -1,5 +1,18 @@
-static: property
-foo: {{ foo }}
-fruit: {{ fruit }}
-something:
-  something: {{ nested.property }}
+#!/bin/bash
+
+function generateYaml() {
+	TEMPLATEENGINE_TEMPLATEFILE=$0
+	TEMPLATEENGINE_OUTPUTFILE=$1
+	TEMPLATEENGINE_PARAMS=$2
+	TEMPLATEENGINE_MIXIN=$3
+	workingdir=$(pwd)
+
+	docker run -v ${workingdir}:/config \
+		-e "TEMPLATEENGINE_TEMPLATEFILE=${TEMPLATEENGINE_TEMPLATEFILE}" \
+		-e "TEMPLATEENGINE_OUTPUTFILE=${TEMPLATEENGINE_OUTPUTFILE}" \
+		-e "TEMPLATEENGINE_PARAMS=${TEMPLATEENGINE_PARAMS}" \
+		-e "TEMPLATEENGINE_MIXIN=${TEMPLATEENGINE_MIXIN}" \
+		-i philipw/yamltemplates
+}
+
+generateYaml $1 $2 $3 $4
