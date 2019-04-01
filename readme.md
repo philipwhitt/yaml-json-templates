@@ -45,7 +45,9 @@ function generateYaml() {
 ```
 See examples folder for a more complete example.
 
-**PHP Lib Usage**
+PHP Lib Usage
+=============
+
 Install via composer: `philipw/yaml-template-generator`
 ```
 use TemplateEngine\Config;
