@@ -16,10 +16,10 @@ if (!getenv('TEMPLATEENGINE_TEMPLATEFILE')) {
 	exit(1);
 }
 
-$templateFile = getenv('TEMPLATEENGINE_TEMPLATEFILE');
-$templateOutputFile = getenv('TEMPLATEENGINE_OUTPUTFILE');
-$globals = getenv('TEMPLATEENGINE_PARAMS');
-$mixins = getenv('TEMPLATEENGINE_MIXIN');
+$templateFile       = '/config/'.getenv('TEMPLATEENGINE_TEMPLATEFILE');
+$templateOutputFile = '/config/'.getenv('TEMPLATEENGINE_OUTPUTFILE');
+$globals            = '/config/'.getenv('TEMPLATEENGINE_PARAMS');
+$mixins             = '/config/'.getenv('TEMPLATEENGINE_MIXIN');
 
 if (!is_file($templateFile)) {
 	cli\line("");

@@ -1,2 +1,3 @@
 foo: {{ foo }}
+nestedFoo: {{ nested.foo }}
 fruit: {{ fruit }}

@@ -1,0 +1,5 @@
+static: property
+foo: {{ foo }}
+fruit: {{ fruit }}
+something:
+  something: {{ nested.property }}

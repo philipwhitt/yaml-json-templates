@@ -1,0 +1,7 @@
+static: property
+foo: bar
+fruit:
+    - apple
+    - banana
+something:
+    something: thiswasnested

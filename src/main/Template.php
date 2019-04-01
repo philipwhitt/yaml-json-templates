@@ -64,7 +64,8 @@ class Template {
 
 	private function convertTopLevelArrayToYaml($values) {
 		foreach ($values as $key => $value) {
-			if (is_array($value)) {
+			// is numeric array
+			if (is_array($value) && isset($value[0])) {
 				$values[$key] = "\n".Yaml::dump($value)."\n";
 			}
 		}
@@ -74,7 +75,8 @@ class Template {
 
 	private function convertTopLevelArrayToJson($values) {
 		foreach ($values as $key => $value) {
-			if (is_array($value)) {
+			// is numeric array
+			if (is_array($value) && isset($value[0])) {
 				$values[$key] = json_encode($value);
 			}
 		}

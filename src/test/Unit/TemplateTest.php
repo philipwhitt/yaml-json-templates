@@ -11,6 +11,7 @@ class TemplateTest extends TestCase {
 		$expected = 
 <<<EOF
 foo: bar
+nestedFoo: bar
 fruit:
     - apple
     - banana

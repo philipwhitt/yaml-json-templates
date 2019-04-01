@@ -1,0 +1,7 @@
+{
+	"foo" : "bar",
+	"nested" : {
+		"property" : "thiswasnested"
+	},
+	"fruit" : ["apple", "banana"]
+}
