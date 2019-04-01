@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/philipwhitt/yaml-json-templates.svg?branch=master)](https://travis-ci.org/philipwhitt/yaml-json-templates)
 
 YAML/JSON Template Engine
 =========================
